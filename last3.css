@@ -1,0 +1,349 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#orderBox {
+    display: flex;
+}
+.code{
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 400px;
+}
+.first{
+    width: 350px;
+    height: auto;
+    margin-left: 200px;
+}
+.first2{
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+
+}
+.vivoY{
+    /* display: flex; */
+    margin-top: 60px;
+    margin-left: 15px;
+}
+.prime{
+    width: 580px;
+    height: 120px;
+    margin-top: 70px;
+    margin-left: 400px;
+    border: 2px solid wheat;
+    display: flex;
+}
+.first:hover{
+    cursor:pointer ;
+    transition: 0.3s;
+    transform: scale(1.1);
+
+}
+.prime_img{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 60px;
+}
+.prime_img:hover{
+     cursor:pointer;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+.text{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.text:hover,.style:hover{
+     cursor:pointer;
+     color:blueviolet;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.text2{
+    color: red;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.text3{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.over{
+    display: flex;
+}
+.details{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.shop1{
+    width: 700px;
+    height: auto;
+    /* border: 2px solid wheat; */
+    display: flex;
+    margin-left: 330px;
+}
+.style{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#orderBox {
+    display: flex;
+}
+.code{
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 400px;
+}
+.first{
+    width: 350px;
+    height: auto;
+    margin-left: 200px;
+}
+.first2{
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+.vivoY{
+    margin-top: 60px;
+    margin-left: 15px;
+}
+.prime{
+    width: 580px;
+    height: 120px;
+    margin-top: 70px;
+    margin-left: 400px;
+    border: 2px solid wheat;
+    display: flex;
+}
+.first:hover{
+    cursor:pointer ;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.prime_img{
+    padding-top: 20px;
+    display: flex;
+    margin-left: 60px;
+}
+.prime_img:hover{
+     cursor:pointer;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+.text{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.text:hover,.style:hover{
+     cursor:pointer;
+     color:blueviolet;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.text2{
+    color: red;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.text3{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.over{
+    display: flex;
+}
+.details{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.shop1{
+    width: 700px;
+    height: auto;
+    display: flex;
+    margin-left: 330px;
+}
+.style{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES
+   Breakpoints: 1200px, 992px, 768px, 576px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+    .first{
+        width: 300px;
+        margin-left: 100px;
+    }
+    .vivoY{
+        margin-top: 40px;
+    }
+    .code{
+        width: 500px;
+        margin-left: 200px;
+    }
+    .prime{
+        width: 500px;
+        margin-left: 200px;
+    }
+    .text2{
+        margin-left: 200px;
+    }
+    .details{
+        margin-left: 200px;
+    }
+    .shop1{
+        width: 600px;
+        margin-left: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+    #orderBox{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .first{
+        margin-left: 0;
+        width: 260px;
+    }
+    .vivoY{
+        margin-left: 0;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .code{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prime{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .prime_img{
+        margin-left: 20px;
+    }
+    .text{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .text2{
+        margin-left: 30px;
+        font-size: 32px;
+    }
+    .text3{
+        font-size: 38px;
+    }
+    .details{
+        margin-left: 30px;
+    }
+    .shop1{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .style{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .first{
+        width: 220px;
+    }
+    .vivoY h3{
+        font-size: 18px;
+    }
+    .vivoY{
+        font-size: 14px;
+    }
+    .text2{
+        font-size: 26px;
+        margin-left: 20px;
+    }
+    .text3{
+        font-size: 30px;
+    }
+    .details{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .code{
+        width: 95%;
+        padding: 0 15px;
+    }
+    .shop1 img{
+        width: 40px;
+    }
+    .style{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .first{
+        width: 160px;
+    }
+    .vivoY h3{
+        font-size: 16px;
+    }
+    .vivoY{
+        font-size: 12px;
+    }
+    .text2{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .text3{
+        font-size: 22px;
+    }
+    .prime_img{
+        margin-left: 15px;
+    }
+    .text{
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    .details{
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .code{
+        padding: 0 10px;
+    }
+    .first2{
+        width: 70px;
+    }
+    .shop1 img{
+        width: 32px;
+    }
+    .style{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+}

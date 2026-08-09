@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.first{
+    width: 100%;
+    height: auto;   
+}
+.vivo_v70{
+    margin-top: 100px;
+}
+.main_phone{
+    width: 100%;
+    /* border: 2px solid; */
+    margin-top: 50px;
+}
+.main2-phone{
+    margin-top: 130px;
+}
+.one_phone{
+    display: flex;
+}
+.star{
+    color: white;
+}
+.fa-cl{
+    display: flex;
+    margin-top: 120px;
+}
+.flip{
+    color: green;
+    font-weight: 600;
+}
+.flipkart{
+    width: 75px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 20px ;
+}
+.boter{
+    width: 250px;
+    height: auto;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
