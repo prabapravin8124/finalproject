@@ -1,0 +1,435 @@
+
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/shop.css' %}">
+
+    <div>
+        <div>
+            <img src="{% static 'images/shop 71ec39a853d8d2c2f432851ecff40f2e.gif' %}"alt="vivo shop" style="width: 100%; margin-top: 70px;">
+        </div>
+        <div>
+            <h2 style="margin: 60px;"> V Series</h2>
+        </div>
+
+        <div class="over">
+            <div class="box">
+                <a class="nav-link" href="{% url 'shophome2' %}"> 
+                <img src="{% static 'images/box1 f5850829a3137e3b9175e2893aec29e6.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">V70 FE</h2>
+                <p class="img_deta">8GB+128GB Northern Ligh</p>
+                <h2 style="color: red;" class="img_deta">₹37,999.00</h2>
+                <p class="img_deta"><del>₹41,999,00</del></p>
+                </div>
+                </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome3' %}"> 
+                <img src="{% static 'images/shop2 235f134ad61ed365cf1adb1df0f7eed3.png_w860-h860.webp '%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">V70 Elite</h2>
+                <p class="img_deta">8GB+256GB Sand Beige</p>
+                <h2 style="color: red;" class="img_deta">₹58,999.00</h2>
+                <p class="img_deta"><del>₹79,999,00</del></p>
+                </div>
+                </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome4' %}"> 
+                <img src="{% static 'images/shop3 61cfa0c52c14cf60e9662bbe63e4c6a4.png_w860-h860.webp '%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">V70 </h2>
+                <p class="img_deta">12GB+256GB Passion Red</p>
+                <h2 style="color: red;" class="img_deta">₹56,999.00</h2>
+                <p class="img_deta"><del>₹75,999,00</del></p>
+                </div>
+                <a/>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome5' %}"> 
+                <img src="{% static 'images/shop 4 c70de10dd55375a00dfe79272b8f39ab.png_w860-h860.webp '%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">V70e </h2>
+                <p class="img_deta">8GB+128GB Elite Purple</p>
+                <h2 style="color: red;" class="img_deta">₹31,999.00</h2>
+                <p class="img_deta"><del>₹34,999,00</del></p>
+                </div>
+                 </a>
+            </div>
+            </div>
+
+            <div>
+                <h2 style="margin: 60px;">Series T</h2>
+            </div>
+
+              <div class="over">
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome6' %}"> 
+                <img src="{% static 'images/series1 2c8d28a8129082a901ac3bad54f48438.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">T5 Pro 5G</h2>
+                <p class="img_deta">8GB+128GB Glacier Blue</p>
+                <h2 style="color: red;" class="img_deta">₹32,999.00</h2>
+                <p class="img_deta"><del>₹55,999,00</del></p>
+                </div>
+               </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome7' %}"> 
+                <img src="{% static 'images/series2 31d693683b11b0a1cf6be9ae8057b130.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">T5x 5G</h2>
+                <p class="img_deta">6GB+128GB Star Silver</p>
+                <h2 style="color: red;" class="img_deta">₹22,999.00</h2>
+                <p class="img_deta"><del>₹28,999,00</del></p>
+                </div>
+            </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome8' %}"> 
+                <img src="{% static 'images/series3 c768b38e4a1277d58350c9f8eb8e352b.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">T4 Ultra </h2>
+                <p class="img_deta">12GB+512GB Meteor Grey</p>
+                <h2 style="color: red;" class="img_deta">₹39,999.00</h2>
+                <p class="img_deta"><del>₹44,999,00</del></p>
+                </div>
+             </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome10' %}"> 
+                <img src="{% static 'images/series4 6e9330669571b8475334ed8ef0543ab3.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">T4 5G </h2>
+                <p class="img_deta">12GB+256GB Phantom Grey </p>
+                <h2 style="color: red;" class="img_deta">₹28,999.00</h2>
+                <p class="img_deta"><del>₹29,999,00</del></p>
+                </div>
+              </a>
+            </div>
+            </div>
+            <div>
+                <h2 style="margin: 60px;">Flagship - X Series</h2>
+            </div>
+            <div>
+                <img src="{% static 'images/x-serice 9daec3a933de5b825e6a0a18efd2940a.gif'%}" alt="vivo"style="width: 100%;">
+            </div>
+
+            <div>
+                <h2 style="margin: 60px;">ZEISS Image. Go Further.</h2>
+            </div>
+
+            <div class="over">
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome9' %}">
+                <img src="{% static 'images/x-serice 1 fc4480e36a6f655bff3d041cde1d34ee.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X200T</h2>
+                <p class="img_deta">12GB+512GB Stellar Black</p>
+                <h2 style="color: red;" class="img_deta">₹69,999.00</h2>
+                <p class="img_deta"><del>₹87,999.00</del></p>
+                </div>
+              </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome10' %}">
+                <img src="{% static 'images/x-serice 2 d802586ad3163809c94dfd1e0435e3a5.png_w860-h860.webp '%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X300</h2>
+                <p class="img_deta">12GB+256GB Summit Red</p>
+                <h2 style="color: red;" class="img_deta">₹75,999.00</h2>
+                <p class="img_deta"><del>₹83,999.00</del></p>
+                </div>
+             </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome11' %}">
+                <img src="{% static 'images/x-serice 3 84863844faec50921202bf83d94ffacf.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X300 Pro </h2>
+                <p class="img_deta">16GB+512GB Dune Gold</p>
+                <h2 style="color: red;" class="img_deta">₹109,999.00</h2>
+                <p class="img_deta"><del>₹119,999.00</del></p>
+                </div>
+            </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome12' %}">
+                <img src="{% static 'images/x-serice 4 1ddc17d128b3c5eb1f21e9dcc8a1e800.png_w860-h860.webp '%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X Fold5 </h2>
+                <p class="img_deta">16GB+512GB Titanium Grey </p>
+                <h2 style="color: red;" class="img_deta">₹149,999.00</h2>
+                <p class="img_deta"><del>₹159,999.00</del></p>
+                </div>
+                <a/>
+            </div>
+            </div>
+             <div>
+                <h2 style="margin: 60px;">Y Series</h2>
+            </div>
+
+            <div class="over">
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome13' %}">
+                <img src="{% static 'images/Y-serice 1 4ba38ce794ba6b4fc82b0b1180f71a9b.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Y21 5G</h2>
+                <p class="img_deta">4GB+128GB Champagne Gold</p>
+                <h2 style="color: red;" class="img_deta">₹18,999.00</h2>
+                <p class="img_deta"><del>₹32,999.00</del></p>
+                </div>
+             </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome14' %}">
+                <img src="{% static 'images/Y-serice 28cfbe491363d6f2c9be0fb38d52a6047.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Y11 5G</h2>
+                <p class="img_deta">4GB+128GB Sunrise Gold</p>
+                <h2 style="color: red;" class="img_deta">₹16,999.00</h2>
+                <p class="img_deta"><del>₹30,999.00</del></p>
+                </div>
+              </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome15' %}">
+                <img src="{% static 'images/Y-serice 3 0e41567a82fab81938bba353748abe63.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Y51 Pro 5G </h2>
+                <p class="img_deta">8GB+128GB Festive Red</p>
+                <h2 style="color: red;" class="img_deta">₹27,999.00</h2>
+                <p class="img_deta"><del>₹34,999.00</del></p>
+                </div>
+              </a>
+            </div>
+            <div class="box">
+                <a class="nav-link" href="{% url 'shophome16' %}"> 
+                <img src="{% static 'images/Y-serice 4 ec0b5eaa92392df7c808dc8c33818575.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Y31 5G </h2>
+                <p class="img_deta">6GB+128GB Diamond Grey </p>
+                <h2 style="color: red;" class="img_deta">₹23,999.00</h2>
+                <p class="img_deta"><del>₹27,999.00</del></p>
+                </div>
+               </a>
+             </div>
+            </div>
+            <div>
+                <h2 style="margin: 60px;">IQOO Smartphones</h2>
+            </div>
+            <div class="over">
+            <div class="box">
+                <a class="nav-link" href="{% url 'shophome17' %}"> 
+                <img src="{% static 'images/IQOO 1 e51af2cff468a2ef16ff3f9209a5976e.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">IQOO 15R</h2>
+                <p class="img_deta">4GB+128GB Triumph Silve</p>
+                <h2 style="color: red;" class="img_deta">₹52,999.00</h2>
+                <p class="img_deta"><del>₹56,999.00</del></p>
+                </div>
+             </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome18' %}">
+                <img src="{% static 'images/IQOO 2 85d6d4bed1954a4d6b98d18c8a8a055d.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Neo 10</h2>
+                <p class="img_deta">8GB+256GB Inferno Red</p>
+                <h2 style="color: red;" class="img_deta">₹36,999.00</h2>
+                <p class="img_deta"><del>₹38,999.00</del></p>
+                </div>
+             </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome19' %}">
+                <img src="{% static 'images/IQOO 3 678350f014b2f9abfb4d9cf81d0c0411.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Z10R 5G </h2>
+                <p class="img_deta">8GB+128GB Moonstone</p>
+                <h2 style="color: red;" class="img_deta">₹22,999.00</h2>
+                <p class="img_deta"><del>₹23,499.00</del></p>
+                </div>
+              </a>
+            </div>
+            <div class="box"> 
+                <a class="nav-link" href="{% url 'shophome20' %}">
+                <img src="{% static 'images/IQOO 4 49d014f24a5a1eacbf84b0e7b538cc6a.png_w860-h860.webp'%} " alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Z10 Lite 5G </h2>
+                <p class="img_deta">4GB+128GB Cyber Green </p>
+                <h2 style="color: red;" class="img_deta">₹16,999.00</h2>
+                <p class="img_deta"><del>₹28,999.00</del></p>
+                </div>
+              </a>
+            </div>
+            </div>
+
+             <div>
+                <h2 style="margin: 60px;">Accessories</h2>
+            </div>
+            <div class="over">
+            <a class="nav-link" href="{% url 'new' %}">
+            <div class="box">   
+                <img src="{% static 'images/Accessories 1 1066ba4626518e467ae062a1d376edc7.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">Camera Bag</h2>
+                <p class="img_deta">Black</p>
+                <h2 style="color: red;" class="img_deta">₹2,999.00</h2>
+                <p class="img_deta"><del>₹4,299.00</del></p>
+                </div>
+            </div>
+            <a>
+            <a class="nav-link" href="{% url 'new' %}">
+            <div class="box"> 
+                <img src="{% static 'images/Accessories 2 89ee87b8430ed0322ffc75690da83fec.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X300 Ultra Ultraso</h2>
+                <p class="img_deta">Transparent</p>
+                <h2 style="color: red;" class="img_deta">₹699.00</h2>
+                <p class="img_deta"><del>₹899.00</del></p>
+                </div>
+            </div>
+            <a>
+            <a class="nav-link" href="{% url 'new' %}">
+            <div class="box"> 
+                <img src="{% static 'images/Accessories 3 b235cbe9d0549a6e132a52de031c1786.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">X300 FE Ultraso </h2>
+                <p class="img_deta">Transparent</p>
+                <h2 style="color: red;" class="img_deta">₹699.00</h2>
+                <p class="img_deta"><del>₹899.00</del></p>
+                </div>
+            </div>
+            <a>
+            <a class="nav-link" href="{% url 'new' %}">
+            <div class="box"> 
+                <img src="{% static 'images/Accessories 4 747d5d6dbc8d73d078421cb31c36505f.png_w860-h860.webp'%}" alt="vivo" class="box_img">
+                <div>
+                <h2 class="img_deta">IQOO 15R Ultra </h2>
+                <p class="img_deta">Transparent </p>
+                <h2 style="color: red;" class="img_deta">₹699.00</h2>
+                <p class="img_deta"><del>₹899.00</del></p>
+                </div>
+            </div>
+            <a>
+
+            </div>
+
+             <div class="main_kalaver">
+                <div class="kalaver">
+                    <img src="{% static 'images/421d457aec90f2f9d76adad9e3cb3758.jpg.webp'%}" alt="vivo" class="kalaver-img">
+                    <h5 class="kalaver-text">15 Days Price Guarantee</h5>
+                </div>
+                <div class="kalaver">
+                    <img src="{% static 'images/EMI 3f4ab8a057566701ab7bd37a06dc1175.jpg'%}" alt="vivo" class="kalaver-img">
+                    <h5 class="kalaver-text">No Cost EMI</h5>
+                </div>
+                <div class="kalaver">
+                    <img src="{% static 'images/hart 4dd5b505722e8542dea9ae90dc2c788e.jpg'%}" alt="vivo" class="kalaver-img">
+                    <h5 class="kalaver-text">Free Shipping on orders<br>above Rs.500</h5>
+                </div>
+                 <div class="kalaver">
+                    <img src="{% static 'images/secure e93d281247943fd86d0bc6024b9caaec.jpg'%}" alt="vivo" class="kalaver-img">
+                    <h5 class="kalaver-text">100% Secure Payments</h5>
+                </div>
+                <div class="kalaver">
+                    <img src="{% static 'images/hart 4dd5b505722e8542dea9ae90dc2c788e.jpg'%}" alt="vivo" class="kalaver-img">
+                    <h5 class="kalaver-text">24*7 Service Support</h5>
+                </div>
+     </div>
+      <div class="last"> 
+                  <div class="last1">
+                    <div class="last-div">
+                    <h5>Popular Links</h5>
+                    <p>X300 Pro</p>
+                    <p>X300</p>
+                    <p>V60</p>
+                    <p>V60e</p>
+                    <p>T4x 5G</p>
+                    <p>vivo ZEISS co-engineered</p>
+                    <p>vivo Exclusive store<br>
+                    <span>Imaging</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Purchase Online</h5>
+                    <p>E-store</p>
+                    <p>Buy phones</p>
+                    <p>Buy accessories</p>
+                    <p>My orders</p>
+                    <p>Privacy Terms for E-Store</p>
+                    <p>Payment Terms and <br>
+                        <span>Policies</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Support</h5>
+                    <p>FAQs</p>
+                    <p>Service Center</p>
+                    <p>Funtouch OS</p>
+                    <p>IMEI Authentication</p>
+                    <p>Query of Spare Parts Price</p>
+                    <p>System Update</p>
+                    <p>Write to CEO</p>
+                    <p>Privacy Statement for<br><span> Customer Service </span></p>
+                    <p>Download LUTs for <br> <span>Restoring Log</span> </p>
+                    </div>
+                    <div>
+                    <div>
+                    <h5>About vivo</h5>
+                    <p>E-waste Management</p>
+                    <p>Careers at vivo</p>
+                    <p>Terms and Condititons</p>
+                    <p>Investor Information</p>
+                    <p>Equal Opportunity Policy</p>
+                    <p>About Us</p>
+                    <p>Newsroom</p>
+                    <p>Privacy Policy</p>
+                    </div>
+                    </div>
+                     <div>
+                    <div>
+                    <h6 style="color: white;">📞24*7</h6>
+                    <h4>1800-208-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7</h6>
+                    <h4>1800-102-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7(Only for X-Series Customers)</h6>
+                    <h4>1800-208-448</h4>
+
+                    <!-- <h5 style="margin-top:30px"><i class="fa-brands fa-whatsapp"></i>whatsapp (24*7)</h5>
+                    <h5 style="margin-top:30px"><i class="fa-sharp fa-thin fa-envelope"></i>Email us (Reply in 24h)</h5>
+                    <h5 style="margin-top:30px"><i class="fa-brands fa-rocketchat"></i>Chat with us (9 AM - 6PM)</h5> -->
+
+                    <div class="icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                           <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+           </div>
+         
+           <div class="one_last">
+            <p>Our site uses cookies to improve your experience. By continuing to use site, you agree to our <a href="">Cookie Policy</a>and <a href="">Privacy Policy</a>.</p>
+    </div>
+
+<script src="{% static 'js/shop.js' %}"></script>
+
+{% endblock %}

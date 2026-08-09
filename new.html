@@ -1,0 +1,102 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/order2.css' %}">
+
+<div class="container mt-5">
+    <form method="POST" action="{% url 'place_order' %}">
+    {% csrf_token %}
+        <div id="orderBox">
+            <div>
+            <img src="{% static 'images/eff4.webp'%}" alt="vivo" class="first">
+            </div>
+            <div class="vivoY">
+            <h3>vivo X300 Ultra ( Victory Green , 512 GB)</h3>
+               • 16 GB RAM | 512 GB ROM <br>
+               • 17.32 cm (6.82 inch) Full HD + AMOLED Display <br>
+               • 200MP + 50MP +200MP | 50MP Front Camera<br>
+               • 6600 mAh Battery<br>
+               • Anapdragon 8 Elite Gen 5 Processor<br>
+               • 1 Year For Handser and 6 Months forIn-Box Accessories <br>
+
+            </div>
+             </div> 
+     </div>
+         <div class="prime">
+             <div>
+               <img src="{% static 'images/prime.png'%}" alt="vivo" class="prime_img">  
+             </div>
+              <div class="text">
+                <p> Enjoy <b> Unlimited FREE Same day/1- day delivery</b>,<br> Prime offers everyday and more</p>
+             </div>
+        </div>
+        <div class="over">
+            <p class="text2">-48%</p>
+            <p class="text3"> <span style="font-size:20px;">₹</span>1,59,999</p>
+        </div>
+        <div class="shop">
+             <div class="shop1">
+               <div>
+               <img src="{% static 'images/replacement.png'%}" alt="vivo" class="prime_img">  
+               <p class="style">10 days Service Center <br>Replacement</p>
+               </div>
+               <div>
+               <img src="{% static 'images/delivery.png'%}" alt="vivo" class="prime_img">  
+                <p class="style">Free Delivery</p>
+               </div>
+               <div>
+               <img src="{% static 'images/warranty.png'%}" alt="vivo" class="prime_img">  
+               <p class="style">1 Year <br> Warranty</p>
+               </div>
+               <div>
+                <img src="{% static 'images/pay.png'%}" alt="vivo" class="prime_img">  
+                <p class="style">Pay on Delivery</p>
+               </div>
+
+            </div>
+        </div>
+        <div >
+            <div class="details">
+            <p><b>Total: ₹1,59,999</b></p>
+            <p>FREE delivery<b> Monday, 29 June</b></p>
+            <p>Or fastest delivery<b> Tomorrow, 27 June.</b>Order <br>
+            within <span style="color:green;">8 hrs 56 mins.</span></p>
+            <div> Delivering to Chennai 600004 - Updates<br>location  </div> 
+            </div>
+        </div>
+             <div class="code">
+            <h3>Order Details</h3>
+
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" required>
+
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" required>
+
+            
+            <label>Address</label>
+            <input type="text" name="address" class="form-control" required>
+
+            <label>Quantity</label>
+            <input
+                type="number" id="qty" name="qty" value="1" min="1" class="form-control" oninput="calculatePrice()">
+
+            <h4 class="mt-3">
+                Total Price:
+                <span id="total">₹1,59,999</span>
+            </h4>
+
+            <button type="submit" class="btn btn-primary mt-3">
+                Place Order
+            </button>  
+            <div class="out">
+            <img src="{% static 'images/fa_9e47c1.png'%}" alt="vivo" class="first2">
+            </div>       
+    </form>
+</div>
+<script src="{% static 'js/new.js' %}"></script> 
+
+{% endblock %}

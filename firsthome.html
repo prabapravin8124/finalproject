@@ -1,0 +1,229 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/firsthome.css' %}">
+
+<div>
+   <div>
+      <img src="{% static 'images/first1.webp'%}" alt="vivo" class="first">
+   </div>
+   <div class="firstflex">
+    <a class="nav-link" href="{% url 'firsthome1' %}">
+     <div>
+        <img src="{% static 'images/firstbox1.webp' %}"alt="vivo"class="first1"onclick="toggleVideo()">
+     </div>
+    </a>
+    <a class="nav-link" href="{% url 'firsthome2' %}">
+     <div>
+       <img src="{% static 'images/firstbox2.webp'%}" alt="vivo" class="first1">
+     </div>
+     </a>
+   </div>
+   <div class="firstflex">
+    <a class="nav-link" href="{% url 'firsthome3' %}">
+     <div>
+       <img src="{% static 'images/firstbox3.webp'%}" alt="vivo" class="first1">
+     </div>
+    </a>
+    <a class="nav-link" href="{% url 'firsthome4' %}">
+     <div>
+       <img src="{% static 'images/firstbox4.webp'%}" alt="vivo" class="first1">
+     </div>
+     </a>
+   </div>
+
+    <div id="safe">
+      <div>
+        <h2 class="first_text">Curved by Design</h2>
+        <img src="{% static 'images/firstimg.webp'%}" alt="vivo" class="first"> 
+      </div> 
+
+
+      <div class="firstflex">
+        <div>
+          <img src="{% static 'images/firstimg1.1.webp'%}" alt="vivo" class="first1">
+        </div>
+        <div>
+          <img src="{% static 'images/firstimg1.2.webp'%}" alt="vivo" class="first1">
+         </div>
+      </div>
+      <div class="text_flax2">
+        <p class="flax2_p">Sleek and bold. vivo X200's Equal-Depth Quad Curved Display offers</p>
+        <p class="flax2_p">an immersive experience with a uniform curve. The Sunburst Ring</p>
+        <p class="flax2_p">strengthens the camera module while enhancing its overall</p>
+        <p class="flax2_p">elegance. </p>
+      </div>
+      <div>
+        <img src="{% static 'images/firstimg2.webp'%}" alt="vivo" class="first">
+        <p class="camera_text">CAMERA</p>
+        <p class="flax2_p2">Unmatched precision for every shot </p>
+        <img src="{% static 'images/firstimg2.1.webp'%}" alt="vivo" class="first">
+
+        <p class="flax2_p3">ZEISS Telephoto Camera </p>
+        <p class="camera_text1">The World in Ultra Focus</p>
+        <p class="flax2_p">With a 50MP11 ultra-clear sensor and advanced telephoto system, ZEISS Telephoto</p>
+        <p class="flax2_p">Camera captures every detail, from distant landscapes to close-ups, in stunning</p>
+        <p class="flax2_p">clarity.</p>
+        <img src="{% static 'images/firstimg2.2.webp'%}" alt="vivo" class="first">
+
+        <p class="flax2_p3">ZEISS Optics </p>
+        <p class="camera_text1">Precision in every</p>
+        <p class="camera_text1">moment</p>
+        <p class="flax2_p">The ZEISS Optics in vivo X200 delivers unmatched clarity and precision. Whether</p>
+        <p class="flax2_p">capturing portrait or landscape, every shot is razor-sharp with lifelike accuracy in</p>
+        <p class="flax2_p">every detail.</p>
+        <img src="{% static 'images/firstimg2.3.webp'%}" alt="vivo" class="first">
+
+        <p class="flax2_p3">ZEISS T* Coating8 </p>
+        <p class="flax2_p">Reduces flare and reflections, delivering clear, true-to-life photos.</p>
+        <p class="flax2_p3">VCS True Color Main Camera </p>
+        <p class="camera_text1">Picture-Perfect Precision</p>
+        <p class="flax2_p">With VCS spectrum technology, vivo X200's main camera captures every moment</p>
+        <p class="flax2_p">with razor-sharp accuracy and rich color depth, from dawn to dusk.</p>
+        <img src="{% static 'images/firstimg2.4.webp'%}" alt="vivo" class="first">
+
+        <div >
+        <p class="flax2_p3">Dimensity 9400 </p>
+        <p class="camera_text1">Built for Ultimate</p>
+        <p class="camera_text1">Performance, Refined for</p>
+        <p class="camera_text1">Cool Efficiency</p>
+        <video class="first_video" autoplay muted loop playsinline>
+          <source src="{% static 'images/firstvideo2.webm' %}" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+
+
+
+        <p class="flax2_p3">India's 1st 5800 mAh Semi-Solid State Battery2</p>
+        <p class="camera_text1">Enduring Battery for</p>
+        <p class="camera_text1">Extreme Cold</p>
+        <img src="{% static 'images/firstimg2.5.webp'%}" alt="vivo" class="first">
+
+
+
+       <img src="{% static 'images/firstbox4.webp'%}" alt="vivo" class="first">
+        <p class="camera_text1">vivo Live </p>
+        <p class="camera_text1">Call Translation17d</p>
+       <img src="{% static 'images/lastimg1.webp'%}" alt="vivo" class="first_last">
+
+       <div class="last_flax">
+          <div class="last_text">
+             <p class="flax2_p3">AI Transcript Assist16</p>
+            <p class="flax2_p">With AI Transcript Assist, tap once to<br>
+              transcribe conversations instantly. It<br>
+              organizes key points, generates<br>
+              summaries, and lets you search for<br>
+              keywords on demand.
+            </p>
+          </div>
+          <div>
+            <video class="last_video" autoplay muted loop playsinline>
+              <source src="{% static 'images/lastvideo1.webm' %}" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+       </div>
+
+
+ 
+
+
+
+
+         <div class="last"> 
+                  <div class="last1">
+                    <div class="last-div">
+                    <h5>Popular Links</h5>
+                    <p>X300 Pro</p>
+                    <p>X300</p>
+                    <p>V60</p>
+                    <p>V60e</p>
+                    <p>T4x 5G</p>
+                    <p>vivo ZEISS co-engineered</p>
+                    <p>vivo Exclusive store<br>
+                    <span>Imaging</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Purchase Online</h5>
+                    <p>E-store</p>
+                    <p>Buy phones</p>
+                    <p>Buy accessories</p>
+                    <p>My orders</p>
+                    <p>Privacy Terms for E-Store</p>
+                    <p>Payment Terms and <br>
+                        <span>Policies</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Support</h5>
+                    <p>FAQs</p>
+                    <p>Service Center</p>
+                    <p>Funtouch OS</p>
+                    <p>IMEI Authentication</p>
+                    <p>Query of Spare Parts Price</p>
+                    <p>System Update</p>
+                    <p>Write to CEO</p>
+                    <p>Privacy Statement for<br><span> Customer Service </span></p>
+                    <p>Download LUTs for <br> <span>Restoring Log</span> </p>
+                    </div>
+                    <div>
+                    <div>
+                    <h5>About vivo</h5>
+                    <p>E-waste Management</p>
+                    <p>Careers at vivo</p>
+                    <p>Terms and Condititons</p>
+                    <p>Investor Information</p>
+                    <p>Equal Opportunity Policy</p>
+                    <p>About Us</p>
+                    <p>Newsroom</p>
+                    <p>Privacy Policy</p>
+                    </div>
+                    </div>
+                     <div>
+                    <div>
+                    <h6 style="color: white;">📞24*7</h6>
+                    <h4>1800-208-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7</h6>
+                    <h4>1800-102-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7(Only for X-Series Customers)</h6>
+                    <h4>1800-208-448</h4>
+
+                    <!-- <h5 style="margin-top:30px"><i class="fa-brands fa-whatsapp"></i>whatsapp (24*7)</h5>
+                    <h5 style="margin-top:30px"><i class="fa-sharp fa-thin fa-envelope"></i>Email us (Reply in 24h)</h5>
+                    <h5 style="margin-top:30px"><i class="fa-brands fa-rocketchat"></i>Chat with us (9 AM - 6PM)</h5> -->
+
+                    <div class="icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                           <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+           </div>
+         
+           <div class="one_last">
+            <p>Our site uses cookies to improve your experience. By continuing to use site, you agree to our <a href="">Cookie Policy</a>and <a href="">Privacy Policy</a>.</p>
+           </div>
+      </div>
+    </div>
+</div>
+<script src="{% static 'js/firsthome.js' %}"></script>
+{% endblock %}

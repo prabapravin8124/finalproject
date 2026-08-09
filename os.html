@@ -1,0 +1,36 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/order.css' %}">
+
+<div>
+    <div>
+        {% comment %} <video class="first" controls autoplay muted loop>
+    <source src="{% static 'Image/os main.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+       </video> {% endcomment %}
+        <video class="first" autoplay muted loop playsinline>
+           <source src="{% static 'images/os main.mp4' %}" type="video/mp4">
+           Your browser does not support the video tag.
+       </video>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

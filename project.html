@@ -1,0 +1,542 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/project.css' %}">
+<div>
+    <div>
+        <div>
+            <img src="{% static 'images/first 1 a9dafba0-0e04-409e-bf40-284fbf8257b8.jpg' %}" alt="vivo" class="first">
+        </div>
+    </div>
+     <div class="two">   
+           <div class="two-in-one">
+           <a class="nav-link" href="{% url 'firsthome' %}">
+           <img src="{% static 'images/vivo x200.jpg'%}" class="slide active">
+           <img src="{% static 'images/vivo 3.jpg' %}" class="slide">
+           <img src="{% static 'images/vivo 4.jpg'%}" class="slide">
+           <img src="{% static 'images/vivo 5.jpg'%}" class="slide">
+           </a>
+           <button class="prev" onclick="prevSlide()">❮</button>
+           <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+        <div class="two-in-two">
+                <img src="{% static 'images/OIP1.webp'%}" alt="" class="two-img">
+            </div>
+        </div>
+         <div>
+            <h2 class="flont">
+                Perfect Selfie Cam for Perfect Moments
+            </h2>
+        </div>
+         <div class="box-main">
+            <div class="box">
+                <img src="{% static 'images/box1.webp'%}" class="box-img active">
+                <img src="{% static 'images/box1 y400-pro-1-300x300.webp'%}" class="box-img">
+                <img src="{% static 'images/box3 y400-pro-7-300x300.webp'%}" class="box-img">
+                <img src="{% static 'images/box4y400-pro-6-300x300.webp'%}" class="box-img">
+                <img src="{% static 'images/box4y400-pro-8-300x300.webp'%}" class="box-img">
+                <button class="ranger" onclick="prevImg()"><</button>
+                <button class="vengar" onclick="nextImg()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo Y400 Pro 5G UnUsed 📳 <br>Demo | Great Discounts</h6>
+                    <h6 style="margin-left: 30px; margin-top:20px ;">₹23,999.00<del>₹29,999.00</del></h6>
+                    <a class="nav-link" href="{% url 'order2' %}"> 
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+             </div>
+            </a> 
+              <div class="box2">
+                <img src="{% static 'images/vivo2.0 Y400-_vivo-7-600x600.webp'%}" class="box-img2 active">
+                <img src="{% static 'images/vivo2.1 Y400-_vivo-5-300x300.webp'%}" class="box-img2">
+                <img src="{% static 'images/vivo2.3Y400-_vivo-4-300x300.webp'%}" class="box-img2">
+                <img src="{% static 'images/vivo2.4Y400-_vivo-3-300x300.webp'%}" class="box-img2">
+                <img src="{% static 'images/box4y400-pro-8-300x300.webp'%}" class="box-img2">
+                <button class="ranger2" onclick="prevImg2()"><</button>
+                <button class="vengar2" onclick="nextImg2()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo Y400 5G UnUsed 📳 Demo<br>Great Discounts</h6>
+                    <h6 style="margin-left: 30px; margin-top:20px ;">₹21,999.00-₹21,998.99</h6>
+                    <a class="nav-link" href="{% url 'order3' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+            </div>
+            </a>
+            
+             <div class="box3">
+                <img src="{% static 'images/vivo3.0y31_vivo-3-600x600.webp'%}" class="box-img3 active">
+                <img src="{% static 'images/vivo3.1y31_vivo-1-300x300.webp'%}" class="box-img3">
+                <img src="{% static 'images/vivo3.2y31_vivo-12-300x300.webp'%}" class="box-img3">
+                <img src="{% static 'images/vivo3.3y31_vivo-11-300x300.webp'%}" class="box-img3">
+                <img src="{% static 'images/vivo3.4y31_vivo-9-300x300.webp'%}" class="box-img3">
+                <img src="{% static 'images/vivo3.5y31_vivo-7-300x300.webp'%}" class="box-img3">
+                <button class="ranger3" onclick="prevImg3()"><</button>
+                <button class="vengar3" onclick="nextImg3()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo Y31 5G UnUsed Sealcut<br>with Great Offers</h6>
+                    <h6 style="margin-left: 30px; margin-top:20px ;">₹15,999.00 <del>₹19,999.00</del></h6>
+                    <a class="nav-link" href="{% url 'order4' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+            </div>
+            </a>
+            
+             <div class="box4">
+                <img src="{% static 'images/vivo4.0V60_vivo-5-300x300.webp'%}" class="box-img4 active">
+                <img src="{% static 'images/vivo4.1V60_vivo-11-300x300.webp'%}" class="box-img4">
+                <img src="{% static 'images/vivo4.2V60_vivo-4-300x300.webp'%}" class="box-img4">
+                <img src="{% static 'images/vivo4.3V60_vivo-1-300x300.webp'%}" class="box-img4">
+                <img src="{% static 'images/vivo4.4V60_vivo-18-300x300.webp'%}" class="box-img4">
+                <img src="{% static 'images/vivo3.5y31_vivo-7-300x300.webp'%}" class="box-img4">
+                <button class="ranger4" onclick="prevImg4()"><</button>
+                <button class="vengar4" onclick="nextImg4()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo V60 5G Unused Seal Cut  <br>with Great Discount</h6>
+                    <h6 style="margin-left: 30px; margin-top:20px ;">₹30,900.00- ₹30,900.00</h6>
+                    <a class="nav-link" href="{% url 'order5' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+            </div>
+            </a>
+            
+            <div class="box5">
+                <img src="{% static 'images/vivo5.0Y11_vivo-4-600x600.webp'%}" class="box-img5 active">
+                <img src="{% static 'images/vivo5.1 Y11_vivo-7-300x300.webp'%}" class="box-img5 ">
+                <img src="{% static 'images/vivo5.2Y11_vivo-6-300x300.webp'%}" class="box-img5 ">
+                <img src="{% static 'images/vivo5.3 Y11_vivo-5-300x300.webp'%}" class="box-img5">
+                <img src="{% static 'images/vivo5.4Y11_vivo-2-300x300.webp'%}" class="box-img5">
+                <img src="{% static 'images/vivo5.5Y11_vivo-9-300x300.webp'%}" class="box-img5">
+                <button class="ranger5" onclick="prevImg5()"><</button>
+                <button class="vengar5" onclick="nextImg5()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo Y11 5G</h6>
+                    <h6 style="margin-left: 30px; margin-top:20px ;">₹15,999.00 <del>₹19,999.00</del></h6>
+                    <a class="nav-link" href="{% url 'order6' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+            </div>
+            </a>
+        </div>
+    
+        <div>
+            <h2 class="flont">
+                TOP DEALS on your favorite Smartphone
+            </h2>
+        </div>
+            <a class="nav-link" href="{% url 'single' %}">
+        <div class="single">
+             <div>
+             <img src="{% static 'images/1_vivo 1.webp' %}" alt="vivo" class="rount2">
+             <h3 style="margin-left: 40px;">X Fold 5</h3>
+             <p>No Cost EMI ₹12224/mon</p>
+             </a>
+        </div>
+                <a class="nav-link" href="{% url 'single2' %}"> 
+             <div>
+                <img src="{% static 'images/5_vivo.webp'%}" alt="vivo" class="rount2">
+               <h3 style="margin-left: 40px;">T4x 5G</h3>
+               <p>High Density 6500mAh Bat</p>
+               </a>
+            </div>
+            
+            <a class="nav-link" href="{% url 'single3' %}">      
+             <div>
+                <img src="{% static 'images/4_vivo.webp'%}" alt="vivo" class="rount2">
+               <h3 style="margin-left: 50px;">V60</h3>
+               <p>200MP Camera with Zeiss</p>
+               </a>
+            </div>
+            
+            <a class="nav-link" href="{% url 'single4' %}">      
+             <div>
+                <img src="{% static 'images/2_vivo.webp'%}" alt="vivo" class="rount2">
+               <h3 style="margin-left: 20px;">Y19s 5G</h3>
+               <p>Budget & Handy Smart</p>
+            </div>
+            </a>
+            <a class="nav-link" href="{% url 'single5' %}">      
+             <div>
+                <img src="{% static 'images/3_vivo pro.webp'%}" alt="vivo" class="rount2">
+               <h3 style="margin-left: 30px;">Y400 pro</h3>
+               <p>Slimmest Curved Display</p>
+            </div>
+            </a>
+            <a class="nav-link" href="{% url 'single6' %}">      
+            <div>
+                <img src="{% static 'images/icon0002.webp'%}" alt="vivo" class="rount2">
+               <h3 style="margin-left: 20px;">Save Upto</h3>
+               <p>12% on UPL Transaction</p>
+            </div>
+            </a>
+        </div>
+                                <!-- explore div -->
+
+        <div class="flont">
+            <h2>Explore Original Accesories</h2>
+        </div>
+
+        <div class="single">  
+            <div>
+                <a class="nav-link" href="{% url 'wallpaper' %}">
+                <img src="{% static 'images/11_icon.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold">Screen Protector</p>
+                </a>
+            </div>
+             <div>
+                <a class="nav-link" href="{% url 'bluhome' %}">
+                <img src="{% static 'images/10_icon buds.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold explore">TWS Buds</p>
+                </a>
+            </div>
+            
+
+
+            <div>
+                <a class="nav-link" href="{% url 'charger' %}">
+                <img src="{% static 'images/Icons_icon charger.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold explore">Flash Charger</p>
+                </a>
+            </div>
+            <div>
+                <a class="nav-link" href="{% url 'headhome' %}">
+                <img src="{% static 'images/9_icon head phone.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold explore">Head Phone</p>
+                </a>
+            </div>
+             <div>
+                <a class="nav-link" href="{% url 'unitshome' %}">
+                <img src="{% static 'images/y31pro_vivo-13.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold explore">Demo Units</p>
+                </a>
+            </div>
+
+             <div>
+                <a class="nav-link" href="{% url 'datacablehome' %}">
+                <img src="{% static 'images/5353_icon data cable.webp'%}" alt="vivo" class="rount">
+                <p class="fw-bold explore">Data Cable</p>
+                </a>
+            </div>
+        </div>
+        <div class="flont">
+            <h2>New Arrival</h2>
+        </div>
+
+        <div class="box-main">
+          <div class="box8">
+                <img src="{% static 'images/vivo8.1Y51pro_Vivo-1-300x300.webp'%}" class="box-img8 active">
+                <img src="{% static 'images/vivo8.2Y51pro_Vivo-9-300x300.webp'%}" class="box-img8 ">
+                <img src="{% static 'images/vivo8.3Y51pro_Vivo-11-300x300.webp'%}" class="box-img8 ">
+                <img src="{% static 'images/vivo8.4Y51pro_Vivo-5-300x300.webp'%}" class="box-img8">
+                <img src="{% static 'images/vivo8.5Y51pro_Vivo-6-300x300.webp'%}" class="box-img8">
+                <img src="{% static 'images/vivo5.5Y11_vivo-9-300x300.webp'%}" class="box-img8">
+                <button class="ranger8" onclick="prevImg8()"><</button>
+                <button class="vengar8" onclick="nextImg8()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo T5x 5G</h6>
+                    <h6 class="demo3">₹22,998.99 - ₹26,999.00</h6>
+                 <a class="nav-link" href="{% url 'phonehome1' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+                 </a>
+            </div>
+            <div class="box9">
+                <img src="{% static 'images/Y39_vivo-4-600x600 vivo2.webp'%}" class="box-img9 active">
+                <img src="{% static 'images/Y39_vivo-3-300x300 vivoy39.webp'%}" class="box-img9 ">
+                <img src="{% static 'images/Y39_vivo-6-300x300 vivo-3.webp'%}" class="box-img9 ">
+                <img src="{% static 'images/Y39_vivo-8-300x300 vivo-4.webp'%}" class="box-img9">
+                <img src="{% static 'images/Y39_vivo-8-300x300 vivo-4.webp'%}" class="box-img9">
+                <img src="{% static 'images/vivo5.5Y11_vivo-9-300x300.webp'%}" class="box-img9">
+                <button class="ranger9" onclick="prevImg9()"><</button>
+                <button class="vengar9" onclick="nextImg9()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo T5x 5G</h6>
+                    <h6 class="demo3">₹22,998.99 - ₹26,999.00</h6>
+                    <a class="nav-link" href="{% url 'phonehome2' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+                </a>
+            </div>
+             <div class="box10">
+                <img src="{% static 'images/y31pro_vivo-10-600x600 vivo y31 1.webp'%}" class="box-img10 active">
+                <img src="{% static 'images/y31pro_vivo-12-300x300 vivo y31 2.webp'%}" class="box-img10 ">
+                <img src="{% static 'images/y31pro_vivo-4-300x300 vivo y31 3.webp'%}" class="box-img10">
+                <img src="{% static 'images/y31pro_vivo-7-300x300 vivo y31 4.webp'%}" class="box-img10">
+                <img src="{% static 'images/y31pro_vivo-2-300x300 vivo y31 5.webp'%}" class="box-img10">
+                <img src="{% static 'images/y31pro_vivo-5-300x300 vivo y31 6.webp'%}" class="box-img10">
+                <button class="ranger10" onclick="prevImg10()"><</button>
+                <button class="vengar10" onclick="nextImg10()">></button>
+                <div>
+                    <h6 class="demo">Demo</h6>
+                    <h6 class="demo2">Vivo T5x 5G</h6>
+                    <h6 class="demo3">₹22,998.99 - ₹26,999.00</h6>
+                    <a class="nav-link" href="{% url 'phonehome3' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+                </a>
+            </div>
+            </div>
+            
+             <div class="box11">
+                <div>
+                <a class="nav-link" href="{% url 'wallpaper' %}">
+                <img src="{% static 'images/7d31c34b16c8b2028e923117f922d268.png-600x600 vivo part 1.webp'%}" class="box-img11 active">
+                <div>
+                    <h6 class="demo">On Sale</h6>
+                    <h6 class="demo2">Screen Protector for V Series</h6>
+                    <h6 class="demo3">₹499.00 - ₹999.00</h6>
+                    <button class="btn w-50 mt-3 mx-auto border text-center">Buy</button>
+                </div>
+            </div>
+            </a>
+            </div>
+            </div>
+             <div>
+                <div>
+                    <center> 
+                <img src="{% static 'images/os.png.webp'%}" class="taddy active">
+                    </center>
+                <div class="new">
+                    <h2>A New Era of Smooth Begins</h2>
+                   <button class="btn btn-46">Learn More</button>
+                </div>
+                </div>
+            </div>
+
+             <div class="product ">
+                <div><h3>Recent Products</h3></div>
+                <div><h3>Featured Products</h3></div>
+                <div><h3>Top Products</h3></div>
+            </div>
+            <div>
+                <div>
+                       <div class="product-flo">
+                       
+                        <div class="product-1">
+                             <a class="nav-link" href="{% url 'lasthome' %}">
+                            <img src="{% static 'images/12_samsung-4-rgnn1m4q7qz5itsvuyvc4zawydlwah1o4viyi65pwg flo1.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo V40 pro 5G</h5>
+                            <h6 class="product-h6"> ₹44,999.00 - ₹46,990.00</h6></a>
+                            </div>
+                        </div>
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome2' %}">
+                             <img src="{% static 'images/flo-2 y400-pro-3-rgnnfppkqa9zo9blj29vjf7tqg43r10q2nt5nl94kg.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo Y400 Pro 5G UnUsed Demo | Great Discounts</h5>
+                            <h6 class="product-h6"> <span style="color: red;">₹23,999.00</span> - <del>₹29,990.00</del></h6></a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome3' %}">
+                             <img src="{% static 'images/flo-2 y400-pro-3-rgnnfppkqa9zo9blj29vjf7tqg43r10q2nt5nl94kg.webp'%}">
+                            <div>
+                            <h5 class="product-h5">Vivo T4 Ultra 5G</h5>
+                            <h6 class="product-h6"> ₹35,990.00 - ₹39,999.00</h6><a>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div>
+                    <div class="product-flo">
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome4' %}">
+                            <img src="{% static 'images/flo-4 v50e_vivo-13-rgnn8smcf6t07ldexklqoo2obc7u38jusexhh9igdc.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo V50e 5G</h5>
+                            <h6 class="product-h6"> <span style="color: red;">₹28,990.00</span> - <del>₹35,990.00</del></h6></a>
+                            </div>
+                        </div>
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome5' %}">
+                            <img src="{% static 'images/flo-5 Y400-_vivo-7-rgnnjcd5498ui21tc4r0o08wb084gyfewmhnd1vejk.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo Y400 5G UnUsed Demo | Great Discounts</h5>
+                            <h6 class="product-h6">₹21,999.00 - ₹22,998.99</h6></a>
+                            </div>
+                        </div>
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome6' %}">
+                            <img src="{% static 'images/flo-6 T4X_vivo-1-rgnncx4uf0gb5zdoucssmmli67vtvexg0u07aze928.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo T4x 5G</h5>
+                            <h6 class="product-h6">₹16,999.00 - ₹20,998.99</h6> </a>
+                            </div>
+                       
+                        </div>
+                        </div>
+                       </div>
+                </div>
+                <div>
+                    <div class="product-flo">
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome7' %}">
+                            <img src="{% static 'images/flo-7v40e-01-rgnnafu6dr22j0zebs78jr4pqm3yk62y0k12pp2nhc.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo V40 5G Demo | Latest Unused Demo |Gull Kit </h5>
+                            <h6 class="product-h6"> <span style="color: red;">₹26,990.00</span>  <del>₹39,990.00</del></h6></a>
+                            </div>
+                            
+                        </div>
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome8' %}">
+                             <img src="{% static 'images/flo-7 y31_vivo-3-rgnnljbl2c8xlav4j2vohgbm7deyfj4v7hafoamc0w.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo Y31 5G UnUsed Sealcut with Great Offers</h5>
+                            <h6 class="product-h6"> <span style="color: red;">₹15,990.00</span>  <del>₹19,990.00</del></h6></a>
+                            </div>
+                        </div>
+                        <div class="product-1">
+                            <a class="nav-link" href="{% url 'lasthome9' %}">
+                            <img src="{% static 'images/flo-6 t4-lite-1-1-rgnngu4mw5tbjhovz1qu0n0na0kvy0h6k7v1ahl74w.webp'%}" alt="vivo">
+                            <div>
+                            <h5 class="product-h5">Vivo T4 Lite 5G</h5>
+                            <h6 class="product-h6">₹13,998.99 - ₹16,998.99</h6></a>
+                            </div>
+                        
+                        </div>
+                       </div>
+                </div>
+            </div>
+            <div class="product-flo">
+                
+                <div class="cover">
+                    <div class="product-2">
+                        
+                    <img src="{% static 'images/moneyback-1.jpg'%}" alt="vivo" class="pro-img">
+                    </div>
+                    <div>
+                    <h5 class="product2-h5">Money Back Guarantee</h5>
+                    <p style="margin-left: 60px;">Get the item you ordered or your money<br>
+                    <span style="margin-left: 120px;">back</p>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div class="product-2">
+                    <img src="{% static 'images/freeshipping-1.jpg'%}" alt="vivo" class="pro-img">
+                    </div>
+                    <div>
+                    <h5 style="margin-left: 110px;">Fast & Free Shipping</h5>
+                    <p style="margin-left: 85px;">Free Shippting on order over ₹99</p>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div class="product-2">
+                    <img src="{% static 'images/customer_service-1.jpg'%}" alt="vivo" class="pro-img">
+                    </div>
+                    <div>
+                    <h5 style="margin-left: 110px;">24/7 Customer Service</h5>
+                    <p style="margin-left: 80px;">Want to talk to a person ? Choose chat or<br>
+                    <span style="margin-left: 120px;">call us</span></p>
+                    </div>
+                </div>
+                <div class="cover">
+                    <div class="product-2">
+                    <img src="{% static 'images/Icons.png55.webp'%}" alt="vivo" class="pro-img">
+                    </div>
+                    <div>
+                    <h5 style="margin-left: 100px;">100% Genuine Products</h5>
+                    <p style="margin-left: 70px;">Want to talk to a person ? Choose chat or<br>
+                    <span style="margin-left: 120px;">call us</span></p>
+                    </div>
+                </div>   
+            </div>
+           <div class="last"> 
+                  <div class="last1">
+                    <div class="last-div">
+                    <h5>Popular Links</h5>
+                    <p>X300 Pro</p>
+                    <p>X300</p>
+                    <p>V60</p>
+                    <p>V60e</p>
+                    <p>T4x 5G</p>
+                    <p>vivo ZEISS co-engineered</p>
+                    <p>vivo Exclusive store<br>
+                    <span>Imaging</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Purchase Online</h5>
+                    <p>E-store</p>
+                    <p>Buy phones</p>
+                    <p>Buy accessories</p>
+                    <p>My orders</p>
+                    <p>Privacy Terms for E-Store</p>
+                    <p>Payment Terms and <br>
+                        <span>Policies</span>
+                    </p>
+                    </div>
+                    <div>
+                    <h5>Support</h5>
+                    <p>FAQs</p>
+                    <p>Service Center</p>
+                    <p>Funtouch OS</p>
+                    <p>IMEI Authentication</p>
+                    <p>Query of Spare Parts Price</p>
+                    <p>System Update</p>
+                    <p>Write to CEO</p>
+                    <p>Privacy Statement for<br><span> Customer Service </span></p>
+                    <p>Download LUTs for <br> <span>Restoring Log</span> </p>
+                    </div>
+                    <div>
+                    <div>
+                    <h5>About vivo</h5>
+                    <p>E-waste Management</p>
+                    <p>Careers at vivo</p>
+                    <p>Terms and Condititons</p>
+                    <p>Investor Information</p>
+                    <p>Equal Opportunity Policy</p>
+                    <p>About Us</p>
+                    <p>Newsroom</p>
+                    <p>Privacy Policy</p>
+                    </div>
+                    </div>
+                     <div>
+                    <div>
+                    <h6 style="color: white;">📞24*7</h6>
+                    <h4>1800-208-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7</h6>
+                    <h4>1800-102-3388</h4>
+
+                    <h6 style="color: white; margin-top:30px">📞 24*7(Only for X-Series Customers)</h6>
+                    <h4>1800-208-448</h4>
+                    <div class="icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                           <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+           </div>
+         
+           <div class="one_last">
+            <p>Our site uses cookies to improve your experience. By continuing to use site, you agree to our <a href="">Cookie Policy</a>and <a href="">Privacy Policy</a>.</p>
+           </div>
+ </div>
+
+<script src="{% static 'js/project.js' %}"></script>
+
+{% endblock %}

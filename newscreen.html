@@ -1,0 +1,97 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/newscreen.css' %}">
+
+<div>
+    <div>
+        <div>
+            <video class="first" autoplay muted loop>
+                <source src="{% static 'images/vivoeff2.webm' %}" type="video/webm"> Your browser does not support the video tag.
+            </video>
+        </div>  
+          
+    </div>
+    <div>
+  <div class="flex">
+     <div>
+       <img src="{% static 'images/eff4.webp'%}" alt="vivo" class="rount2">
+
+       <div class="boxs">
+          <div class="box">
+             <img src="{% static 'images/delivery.png'%}" alt="vivo" class="rount3"> 
+             <p class="text">Free Shipping <br> Orders Above,</p>
+             <p class="text">₹9999</p>
+          </div>
+          <div class="box">
+             <img src="{% static 'images/replacement.png'%}" alt="vivo" class="rount3"> 
+             <p class="text">Delivery Within</p>
+             <p class="text"> 48 Hrs to <br> 4 Working days </p>
+          </div>
+          <div class="box">
+             <img src="{% static 'images/pay.png'%}" alt="vivo" class="rount3"> 
+             <p class="text">Cash Back</p>
+             <p class="text"> Upto ₹12000<br> Modelwise </p>
+          </div>
+       </div>
+     </div>
+    <div class="start"> 
+    <div class="secont1">
+             <h6>Product</h6>
+             <h3>Vivo X300 Ultra</h3>
+             <p>Sku:<b> VIV-SP-XF3-001-1</b></p>
+              <div>
+                 <div>
+                    <h1>₹ 1,59,999</h1>
+                    <h5><del>₹2,59,999</del></h5>
+                    <a class="nav-link" href="{% url 'new' %}">
+                    <button class="btn w-50 mt-3 mx-auto border text-center worker">Add to cart</button>
+                    </a>
+                 </div>
+              </div>
+      </div>
+    <div class="second">
+      <div class="third_class1">
+        <img src="{% static 'images/charging.webp'%}" alt="vivo" class="rount">
+         <div class="text">
+            <p><b>Vivo Type C Fast<br>Charging 4A Data <br> Cable</b></p><br>
+            <p>₹599.00<del>₹699.00</del></p>
+          </div>
+      </div>
+        <div class="code"></div>
+
+        <div class="third_class1">
+          <img src="{% static 'images/hartphone.webp'%}" alt="vivo" class="rount">
+           <div class="text">
+             <p><b>Vivo Xe710 Wired <br>Type C Headset</b></p><br>
+             <p>₹899.00<del>₹999.00</del></p>
+            </div>
+        </div>
+           <div class="code"></div>
+
+        <div class="third_class1">
+          <img src="{% static 'images/flash.webp'%}" alt="vivo" class="rount">
+            <div class="text">
+              <p><b>Vivo 33W Flash<br>Charging 2.0<br></p><br>
+              <p>₹1,349.00<del>₹1,399.00</del></p>
+          </div>
+        </div>
+          <div class="code"></div>
+
+          <div class="third_class1">
+            <img src="{% static 'images/flash2.webp'%}" alt="vivo" class="rount">
+              <div class="text">
+                 <p><b>Vivo 66W Flash<br>Charging 3.4A<br>Adapter</b></p><br>
+                 <p>₹1,990.00<del>₹1,999.00</del></p>
+            </div>
+          </div>
+            <div class="code"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,102 @@
+{% extends 'vivo/layout/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/order.css' %}">
+
+<div class="container mt-5">
+    <form method="POST" action="{% url 'place_order' %}">
+    {% csrf_token %}
+        <div id="orderBox">
+            <div>
+            <img src="{% static 'images/orderpage4.webp'%}" alt="vivo" class="first">
+            </div>
+            <div class="vivoY">
+            <h3>vivo v60 5G (Mist Gray , 128 GB)</h3>
+               • 8 GB RAM | 128 GB ROM <br>
+               • 17.02 cm (6.77 inch) Full HD + Display <br>
+               • 50MP + 8MP + 50MP | 50MP Front Camera<br>
+               • 6500 mAh Battery<br>
+               • 7 Gen 4 Processor<br>
+               • 1 Year Warranty <br>
+
+            </div>
+             </div> 
+     </div>
+         <div class="prime">
+             <div>
+               <img src="{% static 'images/prime.png'%}" alt="vivo" class="prime_img">  
+             </div>
+              <div class="text">
+                <p> Enjoy <b> Unlimited FREE Same day/1- day delivery</b>,<br> Prime offers everyday and more</p>
+             </div>
+        </div>
+        <div class="over">
+            <p class="text2">-48%</p>
+            <p class="text3"> <span style="font-size:20px;">₹</span>30,900</p>
+        </div>
+        <div class="shop">
+             <div class="shop1">
+               <div>
+               <img src="{% static 'images/replacement.png'%}" alt="vivo" class="prime_img">  
+               <p class="style">10 days Service Center <br>Replacement</p>
+               </div>
+               <div>
+               <img src="{% static 'images/delivery.png'%}" alt="vivo" class="prime_img">  
+                <p class="style">Free Delivery</p>
+               </div>
+               <div>
+               <img src="{% static 'images/warranty.png'%}" alt="vivo" class="prime_img">  
+               <p class="style">1 Year <br> Warranty</p>
+               </div>
+               <div>
+                <img src="{% static 'images/pay.png'%}" alt="vivo" class="prime_img">  
+                <p class="style">Pay on Delivery</p>
+               </div>
+
+            </div>
+        </div>
+        <div >
+            <div class="details">
+            <p><b>Total: ₹30,900</b></p>
+            <p>FREE delivery<b> Monday, 29 June</b></p>
+            <p>Or fastest delivery<b> Tomorrow, 27 June.</b>Order <br>
+            within <span style="color:green;">8 hrs 56 mins.</span></p>
+            <div> Delivering to Chennai 600004 - Updates<br>location  </div> 
+            </div>
+        </div>
+             <div class="code">
+            <h3>Order Details</h3>
+
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" required>
+
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" required>
+
+            
+            <label>Address</label>
+            <input type="text" name="address" class="form-control" required>
+
+            <label>Quantity</label>
+            <input
+                type="number" id="qty" name="qty" value="1" min="1" class="form-control" oninput="calculatePrice()">
+
+            <h4 class="mt-3">
+                Total Price:
+                <span id="total">₹30,900</span>
+            </h4>
+
+            <button type="submit" class="btn btn-primary mt-3">
+                Place Order
+            </button>  
+            <div class="out">
+            <img src="{% static 'images/fa_9e47c1.png'%}" alt="vivo" class="first2">
+            </div>       
+    </form>
+</div>
+<script src="{% static 'js/orderpage4.js' %}"></script> 
+
+{% endblock %}
